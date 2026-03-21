@@ -1,16 +1,16 @@
 name: Verify Human Identity
 
 on:
-  workflow_dispatch:
-    inputs:
-      agent_name:
-        description: 'anyep'
-        required: true
-        default: 'anyep'
-      agent_description:
-        description: 'anyep'
-        required: true
-        default: 'anyep AI Agent'
+  workflow_dispatch:
+    inputs:
+      agent_name:
+        description: 'anyepsss'
+        required: true
+        default: 'anyepsss'
+      agent_description:
+        description: 'anyepsss'
+        required: true
+        default: 'anyepsss AI Agent'
 
 jobs:
   verify:
