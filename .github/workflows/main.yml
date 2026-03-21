@@ -28,9 +28,10 @@ jobs:
   - name: Step 1 - Install ClawHub skill
     run: npx clawhub@0.8.0 install verified-agent-identity
 
-  - name: Install dependencies
-    working-directory: skills/verified-agent-identity
-    run: npm install
+    - name: Install dependencies inside skill
+  run: |
+    cd skills/verified-agent-identity
+    npm install @0xpolygonid/js-sdk
 
   - name: Step 2 - Create new Ethereum Identity
     working-directory: skills/verified-agent-identity
