@@ -29,7 +29,10 @@ jobs:
   run: npx clawhub@0.8.0 install verified-agent-identity
 
 - name: Install required dependencies
-  run: npm install @0xpolygonid/js-sdk
+  run: |
+    cd skills/verified-agent-identity
+    npm init -y
+    npm install @0xpolygonid/js-sdk
 
 - name: Step 2 - Create new Ethereum Identity
   run: |
